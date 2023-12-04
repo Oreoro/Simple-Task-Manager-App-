@@ -7,12 +7,13 @@ A Simple Task Manager App with easy UI
 ```bash
 git clone https://github.com/Oreoro/Simple-Task-Manager-App-.git
 ```
-cd into the project folder using cmd/bash and run 
+## CD into the project folder using cmd/bash and run 
+
 ```bash
 yarn 
 ```
 
 ## Running the app  
-    ```bash
-    yarn start
-    ```
+```bash
+ yarn start
+ ```
