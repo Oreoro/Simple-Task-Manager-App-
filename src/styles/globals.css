@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+
+
+  
+      --background: 200 50% 95%; 
+      --foreground: 210 50% 20%; 
+
+      --muted: 200 50% 95%;
+      --muted-foreground: 210 50% 20%;
+
+    --popover: 255 0% 100%;
+    --popover-foreground: 10 1% 15%;
+
+    --card: 255 0% 100%;
+    --card-foreground: 10 1% 15%;
+
+    --border: 10 40% 80%;
+    --input: 10 40% 80%;
+
+    --primary: 185 60% 50%;
+    --primary-foreground: 185 55% 99%;
+
+    --secondary: 1 5% 95%;
+    --secondary-foreground: 185 60% 50%;
+
+    --accent: 5 70% 95%;
+    --accent-foreground: 10 1% 15%;
+
+    --destructive: 0 60% 70%;
+    --destructive-foreground: 15 30% 99%;
+
+    --ring: 190 20.2% 65.1%;
+
+    --radius: 0.75rem;
+
+    --red-light: 0 60% 80%;
+    --red-dark: 0 60% 30%;
+
+    --yellow-light: 53 80% 70%;
+    --yellow-dark: 23 50% 40%;
+
+    --green-light: 152 70% 70%;
+    --green-dark: 163 60% 25%;
+  }
+
+  .dark {
+    --background: 220 50% 30%;  
+    --foreground: 0 0% 85%;
+
+    --muted: 220 50% 30%;
+    --muted-foreground: 0 0% 85%;
+
+    --popover: 10 1% 15%;
+    --popover-foreground: 255 80% 99%;
+
+    --card: 10 1% 15%;
+    --card-foreground: 255 80% 99%;
+
+    --border: 10 30% 30%;
+    --input: 10 30% 30%;
+
+    --primary: 255 80% 99%;
+    --primary-foreground: 10 1% 15%;
+
+    --secondary: 10 30% 30%;
+    --secondary-foreground: 255 80% 99%;
+
+    --accent: 10 30% 30%;
+    --accent-foreground: 255 80% 99%;
+
+    --destructive: 0 60% 30%;
+    --destructive-foreground: 15 30% 99%;
+
+    --ring: 10 30% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--secondary)) hsl(var(--primary));
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--border));
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 20px;
+  border: 2px solid hsl(var(--accent));
+}
+}
