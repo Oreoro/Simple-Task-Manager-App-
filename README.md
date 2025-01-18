@@ -10,7 +10,7 @@ git clone https://github.com/Oreoro/Simple-Task-Manager-App-.git
 ## CD into the project folder using cmd/bash and run 
 
 ```bash
-yarn 
+yarn install
 ```
 
 ## Running the app  
